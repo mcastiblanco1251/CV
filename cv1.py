@@ -138,7 +138,7 @@ def detect3():
     cv2.destroyAllWindows()
 
 def tomar():
-    img_file_buffer = st.camera_input("Take a picture")
+    img_file_buffer = st.camera_input("Toma una foto")
 
     if img_file_buffer is not None:
         # To read image file buffer with OpenCV:
@@ -197,4 +197,6 @@ with row1_4:
     t=st.button('Tomar')
     if t:
         tomar()
-st.subheader('Si te interesó y quieres saber como se aplica contactanos en [http://ia.smartecorganic.com.co/contact](http://ia.smartecorganic.com.co/index.php/contact/)')
+
+with st.expander("Contáctanos👉"):
+    st.subheader('Quieres conocer mas de IA, ML o DL 👉[contactanos!!](http://ia.smartecorganic.com.co/index.php/contact/)')
